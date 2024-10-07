@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reponsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
   </head>
   <body>
     <!-- -------------------------------------------Contact-section Start---------------------------------------------- -->
@@ -75,6 +76,50 @@
                   </div>
                   </div>  
              <!-- -------------------------------------------Get_in_touch-section End---------------------------------------------- -->
+               <!-- -------------------------------------------send a message-section start---------------------------------------------- -->
+                <div class="container">
+                  <div class="row mt-lg-5 ">
+                    <div class="What_we_offer responsive_text ">
+                    <h1>Send us a message</h1>
+                    <p class="text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <form id="contact-form">
+                      <div class="row p-4">
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Name</label>
+                          <input type="text"  id="name" name="name" required class="form-control" placeholder="Name" aria-label="First name">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Company</label>
+                          <input type="text" id="company" class="form-control" placeholder="Company" aria-label="Last name">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Phone</label>
+                          <input type="number" id="phone" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" id="email" name="email" required class="form-control"  placeholder="Email">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputEmail4" class="form-label">Subject</label>
+                          <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="inputEmail4" class="form-label">Message</label>
+                          <textarea class="form-control" id="message" name="message" placeholder="Message" required></textarea>
+                          
+                        </div>
+                        <button class="send_btn" type="submit">Send Message</button>
+                     
+                      </div>
+                    </form>
+                    <div id="response"></div>
+                  </div>
+                </div>
+                 <!-- -------------------------------------------send a message-section End---------------------------------------------- -->
                  <!-- -------------------------------------------Social_media-section Start---------------------------------------------- -->
                   <div class="container">
                     <div class="row  ">
@@ -131,6 +176,52 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "Rre3f_JLVMqsNk6Md",
+  });
+})();
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    const company = document.getElementById('company').value;
+    const phone = document.getElementById('phone').value;
+    const subject = document.getElementById('subject').value;
+
+    // Create a template with the data
+    const templateParams = {
+        from_name: name,
+        from_company: company,
+        from_phone: phone,
+        from_email: email,
+        from_subject: subject,
+        message: message,
+    };
+
+    // Send the email
+    emailjs.send('service_cwc9adg', 'template_zv7msop', templateParams)
+        .then(function(response) {
+            document.getElementById('response').innerHTML = 'Email sent successfully!';
+            console.log('SUCCESS!', response.status, response.text);
+            // Optionally clear the form fields
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            document.getElementById('response').innerHTML = 'Failed to send email. Please try again.';
+            console.log('FAILED...', error);
+        });
+});
+
+    </script>
     <script src="script.js"></script>   
     </body>
     </html>
