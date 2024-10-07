@@ -1,0 +1,596 @@
+:root {
+    --white-color: white;
+    --pink-color: #FD0988;
+    --e-global-color-secondary: #FFFFFF;
+    --e-global-color-text: #FFFFFF;
+    --e-global-color-accent: #FFFFFF2B;
+    --e-global-color-d49ac81: #FD0988;
+    --e-global-color-332724a: #7237BD;
+    --e-global-color-4d462f5: #DCDCDE;
+    --e-global-color-cfa1f76: #F8F8F8;
+    --e-global-color-044b931: #070B20;
+    --e-global-color-bb890b8: #16163C;
+    --e-global-color-639e8dd: #252831;
+    --e-global-color-ad3bea7: #FD0988;
+    --e-global-color-a2064a9: #7237BD;
+    --e-global-color-2f09e3a: #191C26;
+  }
+  
+  /* background-image: linear-gradient(135deg, var(--e-global-color-d49ac81) 0%, var(--e-global-color-332724a) 100%); */
+
+body{
+  background-color: #191C26;
+}
+
+  /* Hero Section with Background Image */
+.hero_section {
+    position: relative;
+    height: 140vh; /* Full viewport height */
+    background-image: url('assets/hero_img.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+  
+  /* Overlay for the dark effect */
+  .hero_section .hero_section_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #070B20CC 40%, #FFFFFF00 100%);
+    z-index: 1;
+  }
+  
+  /* Content inside the hero section */
+  .hero_section .hero_section_content {
+    position: relative;
+    z-index: 2; /* Bring content above the overlay */
+    color: white;
+    text-align: start;
+  }
+  
+  .hero_section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero_section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero_section .btn {
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    background-color: transparent;
+    background-image: linear-gradient(135deg, var(--e-global-color-d49ac81) 0%, var(--e-global-color-332724a) 100%);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: var(--e-global-color-d49ac81);
+    border-radius: 30px 30px 30px 30px;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius:35px;
+
+
+  }
+  .hero_card{
+    position: absolute;
+  }
+  .hero_card_row{
+    position:relative;
+   bottom: 6rem;
+    left: 0;
+    z-index: 1000;
+  }
+  .card_editing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--e-global-color-accent);
+    box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+  }
+  .card_editing h4{
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+  }
+  .card_editing p{
+    font: 1rem;
+    text-align: center;
+    color: white;
+  }
+
+
+
+  /* ---------------------------------------------end Hero_section--------------------------------------------- */
+  .who_we_are{
+    margin-top: 15rem;
+  }
+  .who_we_are_text h6{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--e-global-color-ad3bea7);
+  }
+  .who_we_are_text h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+  }
+  .who_we_are_text p{
+    color: white;
+  }
+  .Discover_more{
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    background-color: transparent;
+    background-image: linear-gradient(135deg, var(--e-global-color-d49ac81) 0%, var(--e-global-color-332724a) 100%);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: var(--e-global-color-d49ac81);
+    border-radius: 30px 30px 30px 30px;
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius:35px;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  .who_we_are_img{
+    margin-top: -4rem;
+    width: 40%;
+  }
+  .we_are_video_section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+  }
+  .we_are_video_section_bg{
+width: 70%;
+height: 90vh !important;
+border-radius: 20px;
+z-index: 0;
+
+  }
+  .video_thumb{
+    position: absolute;
+    width: 100%;
+    border: 1rem solid rgba(255, 255, 255, 0.5);;
+    border-radius: 20px;
+  }
+  .play_btn{
+    position: absolute;
+   width: 6rem;
+   height: 6rem;
+   top:40%;
+   left:40%;
+   cursor: pointer;
+  }
+
+  /* ---------------------------------------------end What_we_offer_section--------------------------------------------- */
+
+  .What_we_offer h6{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--e-global-color-ad3bea7);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .What_we_offer h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  .offer_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--e-global-color-accent);
+    box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+
+   }
+   .offer_card h4{
+     font-size: 2rem;
+     color: white;
+     font-weight: 400;
+   }
+   .offer_card p{
+     font: 1rem;
+     text-align: center;
+     color: white;
+   }
+   .learn_more{
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    background-color: transparent;
+    background-image: linear-gradient(135deg, var(--e-global-color-d49ac81) 0%, var(--e-global-color-332724a) 100%);
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: var(--e-global-color-d49ac81);
+    border-radius: 30px 30px 30px 30px;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius:35px;
+    text-decoration: none;
+
+  }
+
+  /* ---------------------------------------------end What_we_offer_section--------------------------------------------- */
+
+
+.brand_section {
+  position: relative;
+  background-image: url('assets/brand.jpg'); /* Update with your image path */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; /* Adjust height as needed */
+  height: 80vh;
+  color: white; /* Text color for contrast */
+  overflow: hidden; /* Ensures no overflow */
+}
+
+
+.brand_section_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #070B20CC 40%, #FFFFFF00 100%);
+  z-index: 1; /* Positioned above the background image */
+}
+
+
+.brand_section_content {
+  position: relative;
+  z-index: 2; /* Positioned above the overlay */
+  height: 100%;
+  text-align: start;
+  padding: 20px; /* Add padding as needed */
+}
+
+
+.brand_section_content h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  text-align: start;
+  
+}
+
+.brand_section_content p {
+  margin-top: 1rem;
+  font-size: 1.25rem; /* Adjust font size */
+}
+.client_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+  border-radius: 10px;
+  padding: 1rem;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-accent);
+  box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+
+}
+
+.client_list li P{
+  padding: 0%;
+  margin: 0%;
+  font-weight: 600;
+}
+  /* ---------------------------------------------end Brand_section--------------------------------------------- */
+  .why_choose_us h6{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--e-global-color-ad3bea7);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .why_choose_us h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+  .why_choose_us_card{
+    padding:1rem;
+    background-color: var(--e-global-color-639e8dd);
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    display: flex;
+  }
+  .why_choose_us_card h4{
+    font-weight: 400;
+  }
+   /* ---------------------------------------------end why_choose_us_section--------------------------------------------- */
+  .How_to_order{
+    padding:0rem 4rem ;
+  }
+   .How_to_order h6{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--e-global-color-ad3bea7);
+    text-transform: uppercase;
+    
+  }
+  .How_to_order h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+   
+  }
+  .How_to_order p{
+    color: white;
+  }
+
+
+  .How_to_order_card{
+    padding:1rem;
+    color: white;
+    display: flex;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--e-global-color-accent);
+    box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+  }
+  .How_to_order_card h4{
+    font-weight: 400;
+  }
+
+  .order_section {
+    position: relative;
+}
+   
+.order_section_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/order_bg.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1; /* Adjusts stacking order */
+}
+
+/* ---------------------------------------------end order_section--------------------------------------------- */
+
+.footer_list{
+  display: flex;
+  justify-content:end;
+  flex-wrap: wrap;
+  padding: 0%;
+  list-style-type: none;
+}
+.footer_list li{
+  margin-left: 3rem;
+}
+.footer_list li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.bottom_line{
+  color: white;
+}
+.footer_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/footer_bg.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; /* Adjusts stacking order */
+}
+/* ---------------------------------------------end footer_section--------------------------------------------- */
+
+/* ---------------------------------------------end Home_page Design--------------------------------------------- */
+/* ---------------------------------------------start about_us_page Design--------------------------------------------- */
+.about_section {
+  position: relative;
+  text-align: center; /* Center the content */
+}
+
+.about_section_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-accent);
+  box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about_section_content h1{
+  font-size: 72px;
+  font-weight: 700;
+}
+.about_section_content p{
+  font-size: 24px;
+  font-weight: 300;
+}
+.our_value_card {
+  position: relative;
+  overflow: hidden; /* Ensure the overlay doesn't overflow the card */
+  transition: transform 0.3s ease; /* Transition for scaling effect */
+}
+
+.our_value_card img {
+  width: 100%;
+  transition: transform 0.6s ease; /* Smooth scaling effect */
+}
+
+.our_value_card:hover img {
+  transform: scale(1.3); /* Scale image on hover */
+}
+
+.our_value_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white; /* Change text color for better visibility */
+  opacity: 1; /* Initially hidden */
+  
+}
+
+
+.our_value_card_content {
+  text-align:end; /* Center the content */
+  padding: 20px;
+}
+.social_media{
+  display: flex;
+  list-style-type: none;
+  padding: 0%;
+  justify-content: center;
+}
+.social_media li{
+  background-color: var(--e-global-color-accent);
+  padding: 10px;
+  margin: .3rem;
+  border-radius: 5px;
+}
+.gallery_card{
+  padding:1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, var(--e-global-color-accent) 0%, #FFFFFF00 60%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-accent);
+  box-shadow: 0px 0px 60px -30px rgba(255, 255, 255, 0.16862745098039217) inset;
+}
+.card_content h4{
+  font-size: 72px;
+  font-weight: 700;
+}
+.card_content p{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.Gallery_card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden; /* Ensure the overlay doesn't overflow the card */
+  transition: transform 0.3s ease; /* Transition for scaling effect */
+}
+
+.Gallery_card img {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  transition: transform 0.6s ease; /* Smooth scaling effect */
+}
+
+.Gallery_card:hover img {
+  transform: scale(1.3); /* Scale image on hover */
+}
+
+.Gallery_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items:end;
+  color: white; /* Change text color for better visibility */
+  opacity: 1; /* Initially hidden */
+  
+}
+
+
+.Gallery_card_content {
+  text-align:start; /* Center the content */
+  padding: 50px;
+}
+.video_btn{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  font-size: 15px;
+  padding: 12px 24px;
+  font-weight: 500;
+
+  border-radius: 30px 30px 30px 30px;
+}
+.play_gallery_btn{
+  display:flex;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color:var(--e-global-color-accent);
+  margin-bottom: 2rem;
+
+}
+.btn_play{
+  width: 3rem;
+  height: 3rem;
+
+}

@@ -1,0 +1,355 @@
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+    .who_we_are {
+        margin-top: 44rem;
+    }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+    .who_we_are {
+        margin-top: 40rem;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+    .who_we_are {
+        margin-top: 36rem;
+    }
+}
+
+
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+    .who_we_are_img{
+        margin-top: -4rem;
+        width: 70%;
+      }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+    .who_we_are_img{
+        margin-top: -4rem;
+        width: 50%;
+      }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+    .we_are_video_section_bg{
+        width: 70%;
+        height: 40vh !important;
+        border-radius: 20px;
+        z-index: 0;
+        
+          }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+    .we_are_video_section_bg{
+        width: 70%;
+        height:40vh !important;
+        border-radius: 20px;
+        z-index: 0;
+        
+          }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+    .we_are_video_section_bg{
+        width: 70%;
+        height:70vh !important;
+        border-radius: 20px;
+        z-index: 0;
+        
+          }
+}
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+    .brand_section_content h1 {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 700;
+        text-align: start;
+        
+      }
+      
+      .brand_section_content p {
+        margin-top: 1rem;
+        font-size: .8rem; /* Adjust font size */
+      }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+    .brand_section_content h1 {
+        font-size: 3rem;
+        color: white;
+        font-weight: 700;
+        text-align: start;
+        
+      }
+      
+      .brand_section_content p {
+        margin-top: 1rem;
+        font-size: 1.25rem; /* Adjust font size */
+      }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+    .brand_section_content h1 {
+        font-size: 3rem;
+        color: white;
+        font-weight: 700;
+        text-align: start;
+        
+      }
+      
+      .brand_section_content p {
+        margin-top: 1rem;
+        font-size: 1.25rem; /* Adjust font size */
+      }
+}
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+    .How_to_order{
+        padding:0rem 1rem ;
+      }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+    .How_to_order{
+        padding:0rem 1rem ;
+      }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+    .How_to_order{
+        padding:0rem 4rem ;
+      }
+}
+/* -------------------------------------------RESPONSIVE Text Topic-----------------------------------------------  */
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+  .responsive_text h1{
+font-size: 2rem;
+color: white;
+font-weight: 600;
+  }
+  .responsive_text p{
+    font-size: 1rem;
+  }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+  .responsive_text h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+      }
+      .responsive_text p{
+        font-size: .8rem;
+      }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+  .responsive_text h1{
+    font-size: 3rem;
+      }
+      .responsive_text p{
+        font-size: 1.2rem;
+      }
+}
+/* -------------------------------------------RESPONSIVE Text Topic-----------------------------------------------  */
+
+/* -------------------------------------------RESPONSIVE Top Topic-----------------------------------------------  */
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+  .about_section_content h1{
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .about_section_content p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+  .about_section_content h1{
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .about_section_content p{
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+  .about_section_content h1{
+    font-size: 72px;
+    font-weight: 700;
+  }
+  .about_section_content p{
+    font-size: 24px;
+    font-weight: 300;
+  }
+}
+/* -------------------------------------------RESPONSIVE Top Topic-----------------------------------------------  */
+
+
+/* -------------------------------------------RESPONSIVE gallery page-----------------------------------------------  */
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+  .card_content h4{
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .card_content p{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .Gallery_card img {
+    width: 100%;
+    height:50vh;
+    background-size: cover;
+    transition: transform 0.6s ease; /* Smooth scaling effect */
+  }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+  .card_content h4{
+    font-size: 38px;
+    font-weight: 700;
+  }
+  .card_content p{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .Gallery_card img {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    transition: transform 0.6s ease; /* Smooth scaling effect */
+  }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+  .card_content h4{
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .card_content p{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .Gallery_card img {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    transition: transform 0.6s ease; /* Smooth scaling effect */
+  }
+}
+/* -------------------------------------------RESPONSIVE gallery page-----------------------------------------------  */
+
+/* -------------------------------------------RESPONSIVE service page-----------------------------------------------  */
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+  .brand_section {
+    position: relative;
+    background-image: url('assets/brand.jpg'); /* Update with your image path */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /* Adjust height as needed */
+    height: auto;
+    color: white; /* Text color for contrast */
+    overflow: hidden; /* Ensures no overflow */
+  }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+  .brand_section {
+    position: relative;
+    background-image: url('assets/brand.jpg'); /* Update with your image path */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /* Adjust height as needed */
+    height: auto;
+    color: white; /* Text color for contrast */
+    overflow: hidden; /* Ensures no overflow */
+  }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+  .brand_section {
+    position: relative;
+    background-image: url('assets/brand.jpg'); /* Update with your image path */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; /* Adjust height as needed */
+    height: auto;
+    color: white; /* Text color for contrast */
+    overflow: hidden; /* Ensures no overflow */
+  }
+}
+/* -------------------------------------------RESPONSIVE service page-----------------------------------------------  */
+/* -------------------------------------------RESPONSIVE home page-----------------------------------------------  */
+/* Mobile styles */
+@media only screen and (max-width: 391px) {
+  .hero_section {
+    position: relative;
+    height: 80vh; /* Full viewport height */
+    background-image: url('assets/hero_img.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+}
+
+/* Small to medium mobile styles */
+@media only screen and (min-width: 392px) and (max-width: 690px) {
+  .hero_section {
+    position: relative;
+    height: 80vh; /* Full viewport height */
+    background-image: url('assets/hero_img.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+}
+/* Tablet styles */
+@media only screen and (min-width: 691px) and (max-width: 1024px) {
+  .hero_section {
+    position: relative;
+    height: 60vh; /* Full viewport height */
+    background-image: url('assets/hero_img.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem;
+  }
+}
+/* -------------------------------------------RESPONSIVE home page-----------------------------------------------  */
